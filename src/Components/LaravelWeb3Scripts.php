@@ -38,7 +38,7 @@ class LaravelWeb3 {
                 walletconnect: {
                     package: WalletConnectProvider,
                     options: {
-                        infuraId: process.env.MIX_WEB3_INFURA_ID,
+                        infuraId: env('WEB_INFURA_ID'),
                     },
                 },
             },
