@@ -35,12 +35,12 @@ class LaravelWeb3 {
             cacheProvider: true,
             disableInjectedProvider: false,
             providerOptions: {
-                // walletconnect: {
-                //     package: WalletConnectProvider,
-                //     options: {
-                //         infuraId: process.env.MIX_WEB3_INFURA_ID,
-                //     },
-                // },
+                walletconnect: {
+                    package: WalletConnectProvider,
+                    options: {
+                        infuraId: process.env.MIX_WEB3_INFURA_ID,
+                    },
+                },
             },
         };
     }
